@@ -8,3 +8,8 @@
 过滤器：统计用户访问次数，记录访问时间、封禁时间
 
 监听器：工程运行时初始化IP存储器（此处用的Map）
+
+然后在SpringBoot启动类添加扫描过滤器
+```java
+@ServletComponentScan("com.qqlin.ipFilterDemo")
+```
